@@ -31,7 +31,7 @@ import HeroTimer from './temporizador/HeroTimer.vue'
   min-height: 100svh;
   display: grid;
   place-items: center;
-  padding: clamp(4rem, 8vw, 6rem) 1rem 2rem;
+  padding: clamp(6rem, 12vw, 8rem) 1rem 2rem;
 }
 
 .hero-content {
@@ -69,6 +69,12 @@ import HeroTimer from './temporizador/HeroTimer.vue'
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-overlay {
+    padding-top: 6.5rem;
   }
 }
 </style>
